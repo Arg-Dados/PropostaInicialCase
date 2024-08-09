@@ -1,4 +1,4 @@
-# Real-Time Processing with Spark and Delta Lake
+# Processamento em tempo real com Spark e Delta Lake
 
 Este projeto é uma solução de processamento de dados em tempo real usando Apache Spark e Delta Lake. Ele foi projetado para processar arquivos CSV contendo dados de vendas, armazená-los em um Data Lake, e gerenciar a estrutura de diretórios necessários para o fluxo de dados.
 
