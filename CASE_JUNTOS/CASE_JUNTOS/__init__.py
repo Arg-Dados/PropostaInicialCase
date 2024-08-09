@@ -28,8 +28,11 @@ os.system('cls' if os.name == 'nt' else 'clear')
 print("Sessão Spark iniciada")
 
 # Lendo todos os arquivos encontrados na pasta de input inicial
+# O loop continuará sendo executado indefinidamente até que seja parado de forma manual
 while True:
-    
+
+    # Verificando se há novos arquivos na pasta RAW, se não houver, espera 5 segundos e verifica novamente.
+    # Se houver arquivos, processa os arquivos e os exclui após o processamento
     while True:
         csv_files = os.listdir(directory_manager.get_storage_raw())
         if len(csv_files) > 0:
