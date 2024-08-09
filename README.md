@@ -25,6 +25,8 @@ A parte do código do projeto é estruturada da seguinte forma:
 
 ## Configuração e Instalação
 
+OBS: O objeto DirectoryManager no método setup_directories cria automaticamente uma pasta no diretório de downloads chamada  STORAGE_JUNTOS, então caso exista outra pasta com o mesmo nome, a mesma será sobreescrita. Além disso, caso a máquina de execução não possua o diretório padrão Downloads, ocorrerá uma pequena inconsistência.
+
 ### 1. Pré-requisitos
 
 - Python 3.8 ou superior
@@ -39,5 +41,3 @@ Crie um ambiente virtual e instale as dependências necessárias:
 python -m venv venv
 source venv/bin/activate  # No Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
-
-OBS: O objeto DirectoryManager no método setup_directories cria automaticamente uma pasta no diretório de downloads chamada  STORAGE_JUNTOS, então caso exista outra pasta com o mesmo nome, a mesma será sobreescrita. Além disso, caso a máquina de execução não possua o diretório padrão Downloads, ocorrerá uma pequena inconsistência.
