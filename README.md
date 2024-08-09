@@ -2,7 +2,9 @@
 
 Este projeto oferece uma solução de processamento de dados em tempo real utilizando Apache Spark e Delta Lake. Ele foi projetado para lidar com arquivos CSV contendo dados de vendas, processando-os e armazenando-os em um Data Lake. Além disso, o projeto gerencia automaticamente a estrutura de diretórios necessária para o fluxo contínuo de dados.
 
-No que diz respeito ao streaming de dados, assim que o script __init__.py é iniciado, ele monitora constantemente um diretório específico, criado automaticamente pelo próprio script. A cada 5 segundos, o sistema verifica se novos arquivos CSV foram adicionados a esse diretório. Quando um novo arquivo é detectado, ele é imediatamente processado e carregado em tempo real no Data Lake, garantindo que os dados estejam sempre atualizados e prontos para uso. Vale ressaltar que o intervalo de 5 segundos pode ser modificado para intervalos menores, incluindo até mesmo uma verificação contínua sem nenhum tipo de interrupção ou espera, porém isso consequentemente consumiria mais poder computacional e talvez não fosse necessário a depender da velocidade de adição de dados na pasta RAW.
+No que diz respeito ao streaming de dados, assim que o script __init__.py é iniciado, ele monitora constantemente um diretório específico, criado automaticamente pelo próprio script. A cada 5 segundos, o sistema verifica se novos arquivos CSV foram adicionados a esse diretório. Quando um novo arquivo é detectado, ele é imediatamente processado e carregado em tempo real no Data Lake, garantindo que os dados estejam sempre atualizados e prontos para uso. 
+
+*Vale ressaltar que o intervalo de 5 segundos pode ser modificado para intervalos menores, incluindo até mesmo uma verificação contínua sem nenhum tipo de interrupção ou espera, porém isso consequentemente consumiria mais poder computacional e talvez não fosse necessário a depender da velocidade de adição de dados na pasta RAW.*
 
 O Arquivo PropostaPreliminar.pdf possui outros detalhes e possibilidades de implementação, incluindo a arquitetura sugerida utilizando diversas tecnologias e ferramentas fornecidas pela Azure.
 
